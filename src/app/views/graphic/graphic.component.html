@@ -1,0 +1,38 @@
+<div class="row">
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <h6 class="text-muted">Seleccione una opción:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        ><i class="fa fa-list"></i
+                      ></span>
+                    </div>
+
+                    <select name="" class="form-control"  (change)="show_grahpic($event)" id="">
+                      <option value="" selected disabled>-Seleccione-</option>
+                      <option *ngFor="let o of options" 
+                      [value]="o.value" >
+                    {{o.text}}
+                  </option>
+                    </select>
+                  </div>
+
+    </div>
+
+    <div class="col-md-12 col-sm-12 col-xs-12 ">
+      <highcharts-chart 
+      [Highcharts]="Highcharts"
+      [options]="optFromInput"
+      [(update)]="updateFromInput"
+      [oneToOne]=true
+      class="fade-in"
+      style="width: 100%; height: 400px; display: block;  height: auto;
+      margin: 0 auto;
+      padding: 10px;
+      position: relative;"
+    ></highcharts-chart>
+    </div>
+</div>

@@ -1,0 +1,1332 @@
+<div class="row div-height scroll" id="element-box fade-in">
+  <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-12">
+      <div
+        class="card border-success flex-md-row mb-4 shadow-sm h-md-250 fade-in"
+      >
+        <div class="card-body d-flex flex-column align-items-start"  *ngIf="form_model">
+      
+          <form
+            [formGroup]="form_model.form"
+            id="creationForm"
+           
+          >
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <!--observaciones-->
+
+                  <h6 class="text-muted">Observaciones:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.observaciones.invalid &&
+                            model_form_control.observaciones.touched,
+                          'text-success': model_form_control.observaciones.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="observaciones"
+                      class="form-control"
+                      formControlName="observaciones"
+                    />
+                  </div>
+
+                  <!--end observaciones-->
+
+                  <!--id_luminaria-->
+
+                  <h6 class="text-muted">id luminaria:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.id_luminaria.invalid &&
+                            model_form_control.id_luminaria.touched,
+                          'text-success': model_form_control.id_luminaria.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="id_luminaria"
+                      class="form-control"
+                      formControlName="id_luminaria"
+                    />
+                  </div>
+
+                  <!--end id_luminaria-->
+
+                  <!--punto_luz-->
+
+                  <h6 class="text-muted">punto luz:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.punto_luz.invalid &&
+                            model_form_control.punto_luz.touched,
+                          'text-success': model_form_control.punto_luz.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="punto_luz"
+                      class="form-control"
+                      formControlName="punto_luz"
+                    />
+                  </div>
+
+                  <!--end punto_luz-->
+
+                  <!--vial-->
+
+                  <h6 class="text-muted">vial:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.vial.invalid &&
+                            model_form_control.vial.touched,
+                          'text-success': model_form_control.vial.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="vial"
+                      class="form-control"
+                      formControlName="vial"
+                    />
+                  </div>
+
+                  <!--end vial-->
+
+                  <!--numero-->
+
+                  <h6 class="text-muted">numero:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.numero.invalid &&
+                            model_form_control.numero.touched,
+                          'text-success': model_form_control.numero.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="numero"
+                      class="form-control"
+                      formControlName="numero"
+                    />
+                  </div>
+
+                  <!--end numero-->
+
+                  <!--lado_via-->
+
+                  <h6 class="text-muted">lado via:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.lado_via.invalid &&
+                            model_form_control.lado_via.touched,
+                          'text-success': model_form_control.lado_via.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="lado_via"
+                      class="form-control"
+                      formControlName="lado_via"
+                    />
+                  </div>
+
+                  <!--end lado_via-->
+
+                  <!--distancia_eje-->
+
+                  <h6 class="text-muted">distancia eje:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.distancia_eje.invalid &&
+                            model_form_control.distancia_eje.touched,
+                          'text-success': model_form_control.distancia_eje.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="distancia_eje"
+                      class="form-control"
+                      formControlName="distancia_eje"
+                    />
+                  </div>
+
+                  <!--end distancia_eje-->
+
+                  <!--s1-->
+
+                  <h6 class="text-muted">s1:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.s1.invalid &&
+                            model_form_control.s1.touched,
+                          'text-success': model_form_control.s1.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="s1"
+                      class="form-control"
+                      formControlName="s1"
+                    />
+                  </div>
+
+                  <!--end s1-->
+
+                  <!--s2-->
+
+                  <h6 class="text-muted">s2:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.s2.invalid &&
+                            model_form_control.s2.touched,
+                          'text-success': model_form_control.s2.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="s2"
+                      class="form-control"
+                      formControlName="s2"
+                    />
+                  </div>
+
+                  <!--end s2-->
+
+                  <!--centro_mando-->
+
+                  <h6 class="text-muted">centro mando:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.centro_mando.invalid &&
+                            model_form_control.centro_mando.touched,
+                          'text-success': model_form_control.centro_mando.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="centro_mando"
+                      class="form-control"
+                      formControlName="centro_mando"
+                    />
+                  </div>
+
+                  <!--end centro_mando-->
+
+                  <!--circuito-->
+
+                  <h6 class="text-muted">circuito:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.circuito.invalid &&
+                            model_form_control.circuito.touched,
+                          'text-success': model_form_control.circuito.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="circuito"
+                      class="form-control"
+                      formControlName="circuito"
+                    />
+                  </div>
+
+                  <!--end circuito-->
+
+                  <!--operativa-->
+
+                  <h6 class="text-muted">operativa:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.operativa.invalid &&
+                            model_form_control.operativa.touched,
+                          'text-success': model_form_control.operativa.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="operativa"
+                      class="form-control"
+                      formControlName="operativa"
+                    />
+                  </div>
+
+                  <!--end operativa-->
+
+                  <!--altura-->
+
+                  <h6 class="text-muted">altura:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.altura.invalid &&
+                            model_form_control.altura.touched,
+                          'text-success': model_form_control.altura.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="altura"
+                      class="form-control"
+                      formControlName="altura"
+                    />
+                  </div>
+
+                  <!--end altura-->
+
+                  <!--tipo_soporte-->
+
+                  <h6 class="text-muted">tipo soporte:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.tipo_soporte.invalid &&
+                            model_form_control.tipo_soporte.touched,
+                          'text-success': model_form_control.tipo_soporte.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="tipo_soporte"
+                      class="form-control"
+                      formControlName="tipo_soporte"
+                    />
+                  </div>
+
+                  <!--end tipo_soporte-->
+
+                  <!--marca_soporte-->
+
+                  <h6 class="text-muted">marca soporte:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.marca_soporte.invalid &&
+                            model_form_control.marca_soporte.touched,
+                          'text-success': model_form_control.marca_soporte.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="marca_soporte"
+                      class="form-control"
+                      formControlName="marca_soporte"
+                    />
+                  </div>
+
+                  <!--end marca_soporte-->
+
+                  <!--modelo_soporte-->
+
+                  <h6 class="text-muted">modelo soporte:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.modelo_soporte.invalid &&
+                            model_form_control.modelo_soporte.touched,
+                          'text-success':
+                            model_form_control.modelo_soporte.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="modelo_soporte"
+                      class="form-control"
+                      formControlName="modelo_soporte"
+                    />
+                  </div>
+
+                  <!--end modelo_soporte-->
+
+                  <!--estado_soporte-->
+
+                  <h6 class="text-muted">estado soporte:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.estado_soporte.invalid &&
+                            model_form_control.estado_soporte.touched,
+                          'text-success':
+                            model_form_control.estado_soporte.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="estado_soporte"
+                      class="form-control"
+                      formControlName="estado_soporte"
+                    />
+                  </div>
+
+                  <!--end estado_soporte-->
+
+                  <!--situacion_soporte-->
+
+                  <h6 class="text-muted">situacion soporte:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.situacion_soporte.invalid &&
+                            model_form_control.situacion_soporte.touched,
+                          'text-success':
+                            model_form_control.situacion_soporte.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="situacion_soporte"
+                      class="form-control"
+                      formControlName="situacion_soporte"
+                    />
+                  </div>
+
+                  <!--end situacion_soporte-->
+
+                  <!--tamano_brazo-->
+
+                  <h6 class="text-muted">tamaño brazo:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.tamano_brazo.invalid &&
+                            model_form_control.tamano_brazo.touched,
+                          'text-success': model_form_control.tamano_brazo.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="tamano_brazo"
+                      class="form-control"
+                      formControlName="tamano_brazo"
+                    />
+                  </div>
+
+                  <!--end tamano_brazo-->
+
+                  <!--longitud_brazo-->
+
+                  <h6 class="text-muted">longitud brazo:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.longitud_brazo.invalid &&
+                            model_form_control.longitud_brazo.touched,
+                          'text-success':
+                            model_form_control.longitud_brazo.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="longitud_brazo"
+                      class="form-control"
+                      formControlName="longitud_brazo"
+                    />
+                  </div>
+
+                  <!--end longitud_brazo-->
+
+                  <!--orientacion_brazo-->
+
+                  <h6 class="text-muted">orientacion brazo:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.orientacion_brazo.invalid &&
+                            model_form_control.orientacion_brazo.touched,
+                          'text-success':
+                            model_form_control.orientacion_brazo.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="orientacion_brazo"
+                      class="form-control"
+                      formControlName="orientacion_brazo"
+                    />
+                  </div>
+
+                  <!--end orientacion_brazo-->
+
+                  <!--tipo_luminaria-->
+
+                  <h6 class="text-muted">tipo luminaria:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.tipo_luminaria.invalid &&
+                            model_form_control.tipo_luminaria.touched,
+                          'text-success':
+                            model_form_control.tipo_luminaria.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="tipo_luminaria"
+                      class="form-control"
+                      formControlName="tipo_luminaria"
+                    />
+                  </div>
+
+                  <!--end tipo_luminaria-->
+
+                  <!--marca_luminaria-->
+
+                  <h6 class="text-muted">marca luminaria:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.marca_luminaria.invalid &&
+                            model_form_control.marca_luminaria.touched,
+                          'text-success':
+                            model_form_control.marca_luminaria.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="marca_luminaria"
+                      class="form-control"
+                      formControlName="marca_luminaria"
+                    />
+                  </div>
+
+                  <!--end marca_luminaria-->
+
+                  <!--modelo_luminaria-->
+
+                  <h6 class="text-muted">modelo luminaria:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.modelo_luminaria.invalid &&
+                            model_form_control.modelo_luminaria.touched,
+                          'text-success':
+                            model_form_control.modelo_luminaria.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="modelo_luminaria"
+                      class="form-control"
+                      formControlName="modelo_luminaria"
+                    />
+                  </div>
+
+                  <!--end modelo_luminaria-->
+
+                  <!--estado_luminaria-->
+
+                  <h6 class="text-muted">estado luminaria:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.estado_luminaria.invalid &&
+                            model_form_control.estado_luminaria.touched,
+                          'text-success':
+                            model_form_control.estado_luminaria.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="estado_luminaria"
+                      class="form-control"
+                      formControlName="estado_luminaria"
+                    />
+                  </div>
+
+                  <!--end estado_luminaria-->
+
+                  <!--tipo_lampara-->
+
+                  <h6 class="text-muted">tipo lampara:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.tipo_lampara.invalid &&
+                            model_form_control.tipo_lampara.touched,
+                          'text-success': model_form_control.tipo_lampara.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="tipo_lampara"
+                      class="form-control"
+                      formControlName="tipo_lampara"
+                    />
+                  </div>
+
+                  <!--end tipo_lampara-->
+
+                  <!--marca_lampara-->
+
+                  <h6 class="text-muted">marca lampara:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.marca_lampara.invalid &&
+                            model_form_control.marca_lampara.touched,
+                          'text-success': model_form_control.marca_lampara.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="marca_lampara"
+                      class="form-control"
+                      formControlName="marca_lampara"
+                    />
+                  </div>
+
+                  <!--end marca_lampara-->
+
+                  <!--modelo_lampara-->
+
+                  <h6 class="text-muted">modelo lampara:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.modelo_lampara.invalid &&
+                            model_form_control.modelo_lampara.touched,
+                          'text-success':
+                            model_form_control.modelo_lampara.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="modelo_lampara"
+                      class="form-control"
+                      formControlName="modelo_lampara"
+                    />
+                  </div>
+
+                  <!--end modelo_lampara-->
+
+                  <!--estado_lampara-->
+
+                  <h6 class="text-muted">estado lampara:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.estado_lampara.invalid &&
+                            model_form_control.estado_lampara.touched,
+                          'text-success':
+                            model_form_control.estado_lampara.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="estado_lampara"
+                      class="form-control"
+                      formControlName="estado_lampara"
+                    />
+                  </div>
+
+                  <!--end estado_lampara-->
+
+                  <!--cantidad_lamparas-->
+
+                  <h6 class="text-muted">cantidad lamparas:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.cantidad_lamparas.invalid &&
+                            model_form_control.cantidad_lamparas.touched,
+                          'text-success':
+                            model_form_control.cantidad_lamparas.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="cantidad_lamparas"
+                      class="form-control"
+                      formControlName="cantidad_lamparas"
+                    />
+                  </div>
+
+                  <!--end cantidad_lamparas-->
+
+                  <!--potencia-->
+
+                  <h6 class="text-muted">potencia:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.potencia.invalid &&
+                            model_form_control.potencia.touched,
+                          'text-success': model_form_control.potencia.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="potencia"
+                      class="form-control"
+                      formControlName="potencia"
+                    />
+                  </div>
+
+                  <!--end potencia-->
+
+                  <!--equipo_auxiliar-->
+
+                  <h6 class="text-muted">equipo auxiliar:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.equipo_auxiliar.invalid &&
+                            model_form_control.equipo_auxiliar.touched,
+                          'text-success':
+                            model_form_control.equipo_auxiliar.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="equipo_auxiliar"
+                      class="form-control"
+                      formControlName="equipo_auxiliar"
+                    />
+                  </div>
+
+                  <!--end equipo_auxiliar-->
+
+                  <!--situacion_equipo_auxiliar-->
+
+                  <h6 class="text-muted">situacion equipo auxiliar:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.situacion_equipo_auxiliar
+                              .invalid &&
+                            model_form_control.situacion_equipo_auxiliar
+                              .touched,
+                          'text-success':
+                            model_form_control.situacion_equipo_auxiliar.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="situacion_equipo_auxiliar"
+                      class="form-control"
+                      formControlName="situacion_equipo_auxiliar"
+                    />
+                  </div>
+
+                  <!--end situacion_equipo_auxiliar-->
+
+                  <!--orientacion-->
+
+                  <h6 class="text-muted">orientacion:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.orientacion.invalid &&
+                            model_form_control.orientacion.touched,
+                          'text-success': model_form_control.orientacion.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="orientacion"
+                      class="form-control"
+                      formControlName="orientacion"
+                    />
+                  </div>
+
+                  <!--end orientacion-->
+
+                  <!--alta-->
+
+                  <h6 class="text-muted">alta:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.alta.invalid &&
+                            model_form_control.alta.touched,
+                          'text-success': model_form_control.alta.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="alta"
+                      class="form-control"
+                      formControlName="alta"
+                    />
+                  </div>
+
+                  <!--end alta-->
+
+                  <!--usuario_alta-->
+
+                  <h6 class="text-muted">usuario alta:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.usuario_alta.invalid &&
+                            model_form_control.usuario_alta.touched,
+                          'text-success': model_form_control.usuario_alta.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="usuario_alta"
+                      class="form-control"
+                      formControlName="usuario_alta"
+                    />
+                  </div>
+
+                  <!--end usuario_alta-->
+
+                  <!--fecha_alta-->
+
+                  <h6 class="text-muted">fecha alta:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.fecha_alta.invalid &&
+                            model_form_control.fecha_alta.touched,
+                          'text-success': model_form_control.fecha_alta.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="fecha_alta"
+                      class="form-control"
+                      formControlName="fecha_alta"
+                    />
+                  </div>
+
+                  <!--end fecha_alta-->
+
+                  <!--modificado-->
+
+                  <h6 class="text-muted">modificado:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.modificado.invalid &&
+                            model_form_control.modificado.touched,
+                          'text-success': model_form_control.modificado.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="modificado"
+                      class="form-control"
+                      formControlName="modificado"
+                    />
+                  </div>
+
+                  <!--end modificado-->
+
+                  <!--usuario_modificado-->
+
+                  <h6 class="text-muted">usuario modificado:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.usuario_modificado.invalid &&
+                            model_form_control.usuario_modificado.touched,
+                          'text-success':
+                            model_form_control.usuario_modificado.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="usuario_modificado"
+                      class="form-control"
+                      formControlName="usuario_modificado"
+                    />
+                  </div>
+
+                  <!--end usuario_modificado-->
+
+                  <!--fecha_modificado-->
+
+                  <h6 class="text-muted">fecha modificado:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.fecha_modificado.invalid &&
+                            model_form_control.fecha_modificado.touched,
+                          'text-success':
+                            model_form_control.fecha_modificado.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="fecha_modificado"
+                      class="form-control"
+                      formControlName="fecha_modificado"
+                    />
+                  </div>
+
+                  <!--end fecha_modificado-->
+
+                  <!--herramienta-->
+
+                  <h6 class="text-muted">herramienta:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.herramienta.invalid &&
+                            model_form_control.herramienta.touched,
+                          'text-success': model_form_control.herramienta.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="herramienta"
+                      class="form-control"
+                      formControlName="herramienta"
+                    />
+                  </div>
+
+                  <!--end herramienta-->
+
+                  <!--numero_registro-->
+
+                  <h6 class="text-muted">numero registro:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.numero_registro.invalid &&
+                            model_form_control.numero_registro.touched,
+                          'text-success':
+                            model_form_control.numero_registro.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="numero_registro"
+                      class="form-control"
+                      formControlName="numero_registro"
+                    />
+                  </div>
+
+                  <!--end numero_registro-->
+
+                  <!--envio-->
+
+                  <h6 class="text-muted">envio:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.envio.invalid &&
+                            model_form_control.envio.touched,
+                          'text-success': model_form_control.envio.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="envio"
+                      class="form-control"
+                      formControlName="envio"
+                    />
+                  </div>
+
+                  <!--end envio-->
+
+                  <!--fecha_envio-->
+
+                  <h6 class="text-muted">fecha envio:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.fecha_envio.invalid &&
+                            model_form_control.fecha_envio.touched,
+                          'text-success': model_form_control.fecha_envio.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="fecha_envio"
+                      class="form-control"
+                      formControlName="fecha_envio"
+                    />
+                  </div>
+
+                  <!--end fecha_envio-->
+
+                  <!--id_centro_mando-->
+
+                  <h6 class="text-muted">id centro mando:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.id_centro_mando.invalid &&
+                            model_form_control.id_centro_mando.touched,
+                          'text-success':
+                            model_form_control.id_centro_mando.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="id_centro_mando"
+                      class="form-control"
+                      formControlName="id_centro_mando"
+                    />
+                  </div>
+
+                  <!--end id_centro_mando-->
+
+                  <!--id_circuito-->
+
+                  <h6 class="text-muted">id circuito:</h6>
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span
+                        class="input-group-text"
+                        [ngClass]="{
+                          'text-danger':
+                            model_form_control.id_circuito.invalid &&
+                            model_form_control.id_circuito.touched,
+                          'text-success': model_form_control.id_circuito.valid
+                        }"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+
+                    <input
+                      type="text"
+                      name="id_circuito"
+                      class="form-control"
+                      formControlName="id_circuito"
+                    />
+                  </div>
+
+                  <!--end id_circuito-->
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

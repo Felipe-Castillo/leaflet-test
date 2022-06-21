@@ -1,0 +1,15 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+span{height: 100%;}
+
+
+.center-container
+{
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
