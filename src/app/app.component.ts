@@ -63,6 +63,8 @@ export class AppComponent {
   public onMapReady(map: Map): void {
     this.map = map;
     this.addLuminairesLayer();
+    this.router.navigate(['/element-information']);
+
 
   }
 

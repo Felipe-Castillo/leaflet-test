@@ -1,10 +1,21 @@
 <div class="row div-height scroll" id="element-box fade-in">
+
+  <div class="card-body d-flex flex-column align-items-start">
+    <strong class="d-inline-block mb-2 text-success"
+      >Información del elemento</strong
+    >
+
+    <p class="card-text mb-auto">
+      Haga click encima o cerca de un elemento para seleccionarlo
+    </p>
+  </div>
   <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="col-md-12">
       <div
-        class="card border-success flex-md-row mb-4 shadow-sm h-md-250 fade-in"
-      >
-        <div class="card-body d-flex flex-column align-items-start"  *ngIf="form_model">
+        class="card border-success flex-md-row mb-4 shadow-sm h-md-250 fade-in" *ngIf="form_model">
+
+     
+        <div class="card-body d-flex flex-column align-items-start col-md-12"  >
       
           <form
             [formGroup]="form_model.form"
@@ -33,6 +44,7 @@
                     </div>
 
                     <input
+                      readonly
                       type="text"
                       name="observaciones"
                       class="form-control"
@@ -61,6 +73,7 @@
                     </div>
 
                     <input
+                      readonly
                       type="text"
                       name="id_luminaria"
                       class="form-control"
@@ -89,6 +102,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="punto_luz"
                       class="form-control"
@@ -117,6 +131,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="vial"
                       class="form-control"
@@ -145,6 +160,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="numero"
                       class="form-control"
@@ -173,6 +189,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="lado_via"
                       class="form-control"
@@ -201,6 +218,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="distancia_eje"
                       class="form-control"
@@ -229,6 +247,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="s1"
                       class="form-control"
@@ -257,6 +276,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="s2"
                       class="form-control"
@@ -285,6 +305,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="centro_mando"
                       class="form-control"
@@ -313,6 +334,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="circuito"
                       class="form-control"
@@ -341,6 +363,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="operativa"
                       class="form-control"
@@ -369,6 +392,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="altura"
                       class="form-control"
@@ -397,6 +421,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="tipo_soporte"
                       class="form-control"
@@ -425,6 +450,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="marca_soporte"
                       class="form-control"
@@ -454,6 +480,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="modelo_soporte"
                       class="form-control"
@@ -483,6 +510,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="estado_soporte"
                       class="form-control"
@@ -512,6 +540,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="situacion_soporte"
                       class="form-control"
@@ -540,6 +569,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="tamano_brazo"
                       class="form-control"
@@ -569,6 +599,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="longitud_brazo"
                       class="form-control"
@@ -598,6 +629,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="orientacion_brazo"
                       class="form-control"
@@ -627,6 +659,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="tipo_luminaria"
                       class="form-control"
@@ -656,6 +689,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="marca_luminaria"
                       class="form-control"
@@ -685,6 +719,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="modelo_luminaria"
                       class="form-control"
@@ -714,6 +749,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="estado_luminaria"
                       class="form-control"
@@ -742,6 +778,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="tipo_lampara"
                       class="form-control"
@@ -770,6 +807,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="marca_lampara"
                       class="form-control"
@@ -799,6 +837,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="modelo_lampara"
                       class="form-control"
@@ -828,6 +867,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="estado_lampara"
                       class="form-control"
@@ -857,6 +897,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="cantidad_lamparas"
                       class="form-control"
@@ -885,6 +926,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="potencia"
                       class="form-control"
@@ -914,6 +956,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="equipo_auxiliar"
                       class="form-control"
@@ -945,6 +988,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="situacion_equipo_auxiliar"
                       class="form-control"
@@ -973,6 +1017,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="orientacion"
                       class="form-control"
@@ -1001,6 +1046,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="alta"
                       class="form-control"
@@ -1029,6 +1075,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="usuario_alta"
                       class="form-control"
@@ -1057,6 +1104,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="fecha_alta"
                       class="form-control"
@@ -1085,6 +1133,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="modificado"
                       class="form-control"
@@ -1114,6 +1163,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="usuario_modificado"
                       class="form-control"
@@ -1143,6 +1193,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="fecha_modificado"
                       class="form-control"
@@ -1171,6 +1222,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="herramienta"
                       class="form-control"
@@ -1200,6 +1252,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="numero_registro"
                       class="form-control"
@@ -1228,6 +1281,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="envio"
                       class="form-control"
@@ -1256,6 +1310,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="fecha_envio"
                       class="form-control"
@@ -1285,6 +1340,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="id_centro_mando"
                       class="form-control"
@@ -1313,6 +1369,7 @@
                     </div>
 
                     <input
+                     readonly
                       type="text"
                       name="id_circuito"
                       class="form-control"

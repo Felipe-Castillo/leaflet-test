@@ -30,6 +30,8 @@ export class GraphicComponent implements OnInit {
       "series": [{
         "data": [],
         "type": "pie",
+        "name": "Luminarias",
+
       }],
       "credits": {
         "enabled": false

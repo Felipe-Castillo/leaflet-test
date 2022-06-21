@@ -5,21 +5,13 @@ import { GraphicComponent } from './graphic.component';
 
 
 const routes: Routes = [{
-  path: '',
-  data: {
-    title: 'Grafico'
-  },
-  children: [
-
-    {
+  
       path: '',
       component: GraphicComponent,
       data: {
         title: "Graficos"
       }
-    }
-
-  ]
+   
 }];
 
 @NgModule({

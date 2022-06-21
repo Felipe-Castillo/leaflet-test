@@ -1,21 +1,14 @@
 <div class="container">
   <button class="btn btn-sucess" routerLink="/element-information">
     <i class="fa fa-info" aria-hidden="true"></i>
-    Information
+    Información
   </button>
 
   <button class="btn btn-sucess" routerLink="/graphic">
-    <i class="fa fa-pie-chart" aria-hidden="true"></i>graphic
+    <i class="fa fa-pie-chart" aria-hidden="true"></i>
+    Graficos
   </button>
-  <div class="card-body d-flex flex-column align-items-start">
-    <strong class="d-inline-block mb-2 text-success"
-      >Información del elemento</strong
-    >
-
-    <p class="card-text mb-auto">
-      Haga click encima o cerca de un elemento para seleccionarlo
-    </p>
-  </div>
+ 
 
   <div class="top-2" [@triggerName]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
